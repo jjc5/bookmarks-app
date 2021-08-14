@@ -47,6 +47,7 @@ function Create(props) {
 						className="form-control"
 						type="text"
 						id="body"
+						placeholder="Link (including https://)"
 						value={newBookmark.body}
 						onChange={handleChange}
 					/>{' '}

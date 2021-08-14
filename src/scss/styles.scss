@@ -2,8 +2,15 @@
 @import "reset";
 @import "grid";
 
+html{
+  height: 100%;
+  text-align: center;
+}
+
 body {
   font-size: 16px;
+  // min-height: 100vh;
+  background-color: : black;
 }
 
 .NavBar {
@@ -14,7 +21,8 @@ body {
 }
 
 .HomePage {
-
+  background: lightblue;
+  width: 100%;
 }
 
 .AboutPage {
@@ -27,4 +35,32 @@ body {
 
 .AppPage {
 
+}
+
+.ShowPage{
+  background: lightblue;
+  text-align: center;
+}
+.titles{
+  color: Black;
+}
+#trashcan{
+  height: 30px;
+}
+.editBtn{
+  background: rgb(248, 212, 255);
+  border-radius: 5px;
+}
+.deleteBtn{
+  border-radius: 50px;
+}
+.deleteBtnShow{
+  margin:auto;
+  width:50px;
+  border-radius: 30px;
+}
+#updateBtnShow{
+  margin:auto;
+  width:100px;
+  border-radius: 30px;
 }

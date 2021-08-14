@@ -57,9 +57,8 @@ export default function Show(props) {
 		<div className="ShowPage">
 			{Object.keys(bookmark).length ? (
 				<>
-					<h3>{bookmark.title}</h3>
+					<h3 class="titles">{bookmark.title}</h3>
 					<p>{bookmark.body}</p>
-					<button onClick={handleDelete}>Delete</button>
 				</>
 			) : (
 				<h1> Loading...</h1>
@@ -75,10 +74,16 @@ export default function Show(props) {
 				</label>
 				<label>
 					{' '}
-					Body:{' '}
+					Link:{' '}
 					<input type="text" ref={bodyInput} defaultValue={bookmark.body} />
 				</label>
-				<input type="submit" value="Update MicroBookmark" />
+				<input id="updateBtnShow" type="submit" value="Update" />
+				<button class="deleteBtnShow" onClick={handleDelete}>
+					<img
+						id="trashcan"
+						src="https://cdn.iconscout.com/icon/premium/png-512-thumb/trash-can-1778449-1515973.png"
+					></img>
+				</button>
 			</form>
 		</div>
 	);

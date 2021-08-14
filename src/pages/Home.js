@@ -46,18 +46,21 @@ export default function Home(props) {
 									href={`/`}
 									onClick={() => window.open(bookmark.body, '_blank')}
 								>
-									<h3>{bookmark.title}</h3>
+									<h3 class="titles">{bookmark.title}</h3>
 								</a>
 								<Link to={`/${bookmark._id}`}>
-									<button className="btn btn-primary">Edit Bookmark</button>
+									<button className="editBtn">Edit Bookmark</button>
 								</Link>
 								<button
-									className="btn btn-danger"
+									className="deleteBtn"
 									onClick={() => {
 										handleDelete(bookmark._id);
 									}}
 								>
-									X
+									<img
+										id="trashcan"
+										src="https://cdn.iconscout.com/icon/premium/png-512-thumb/trash-can-1778449-1515973.png"
+									></img>
 								</button>
 							</li>
 						);
