@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 
 export default function Show(props) {
 	const [bookmark, setBookmark] = useState({});
-	const titleInput = useRef(null); // doc.qs('input#title')
-	const bodyInput = useRef(null); // doc.qs('input#body')
+	const titleInput = useRef(null);
+	const bodyInput = useRef(null);
 
 	const handleUpdate = async e => {
 		e.preventDefault();

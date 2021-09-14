@@ -52,7 +52,7 @@ function Create(props) {
 						onChange={handleChange}
 					/>{' '}
 					<button className="btn btn-primary" type="submit" value="Add">
-						Add Bookmark
+						Add
 					</button>
 				</form>
 			</div>
